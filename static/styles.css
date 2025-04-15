@@ -7,7 +7,8 @@
 }
 
 body {
-    background: linear-gradient(135deg, #2e2c5a, #4b2c69, #59305e, #3b375b);
+    background: #5a4373;
+    background: radial-gradient(circle, rgba(90, 67, 115, 1) 0%, rgba(60, 105, 128, 1) 100%);    
     font-family: 'Poppins', sans-serif;
     color: #fff;
     height: 100vh;
@@ -49,7 +50,7 @@ form button {
     border: none;
     border-radius: 10px;
     background-color: #e4e2e2;
-    color: #4b2c69;
+    color: #5a4373;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
