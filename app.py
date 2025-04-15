@@ -1,3 +1,7 @@
+import os
+
+port = int(os.environ.get("PORT", 5000))
+
 from flask import Flask, render_template, request
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
@@ -26,4 +30,4 @@ def index():
     return render_template("index.html", resultado=resultado)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=port)
